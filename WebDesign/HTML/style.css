@@ -1,0 +1,144 @@
+@font-face{
+    src:url(fonts/Miss-fajardose/miss-fajardose.regular.ttf);
+    font-family: 'japo';
+    src:url(fonts/Rukola/iCiel\ Pacifico.ttf);
+    font-family: 'paci';
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;        
+}
+
+body{
+    width:1170px;
+    height:auto;
+}
+#wrapped{
+    width: 1000px;
+    height:auto;
+}
+a{
+  text-decoration: none;  
+  color:rgb(29, 30, 30);
+}
+#header {
+    position:relative;
+    right:30px;
+}
+h1{
+    position:relative;
+    color:rgb(15, 15, 16);
+    font-size:30px;
+    top:-43px;
+    font-family: paci;
+    opacity:0.88;
+}
+.headline{
+    text-align: center;
+}
+#header{    
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 20px 80px;
+}
+section {
+    box-shadow:0 10px 10px rgb(53, 53, 54);
+}
+#options{
+    box-sizing: border-box;
+    position:relative;
+    left:240px;
+    top:-50px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+ul li{
+    position:relative;
+    list-style: none;
+    padding:0 20px;
+}
+#options li {
+    position:relative;
+    text-decoration: none;
+    font-size:18px;
+    font-weight:600;
+}
+#options li a:hover,
+#options li a.active{
+    color:rgb(47, 46, 46);
+}
+#options li a.active::after{
+
+}
+#options li a:hover::after{
+    content:"";
+    width:30%;
+    height:2px;
+    background:rgb(63, 62, 62);
+    position:absolute;
+    bottom:-4px;
+    left:20px;
+}
+h3{
+    font-size:18px;
+    color:rgb(142, 93, 93);
+    padding:10px 20px;
+    text-transform: uppercase;
+    border:2px solid rgb(67, 64, 64);
+    display:inline-block;
+    margin-top:20px;
+    
+}
+ #menu{
+    display:block;
+    margin: 0 auto;
+ }
+.cat{
+    padding:150px;
+}
+.products li .products-item{
+    list-style-type: none;
+}
+
+.products-item{
+    width: auto;
+    height: auto;
+    padding: 0px;
+    margin: 40px;
+    box-sizing:border-box;
+
+}
+.products-item{
+    display:flex;
+    flex-basis:25%;
+}
+.products-top{
+   margin-top:-7px;
+}
+.item{
+    display:flex;
+    box-sizing:border-box;
+    align-items: center;
+    width: 70px;
+    height:70px;
+}
+ul.products {
+    display:flex;
+    flex-wrap:wrap;
+    margin:0;
+}ul.products {
+    display:flex;
+    flex-basis:25%;
+    justify-content: center;
+}
+ul .products li .products-item 
+ul .products li .products-item .products-top:hover img{
+    transform:scale(1.1);
+}
+
+
+

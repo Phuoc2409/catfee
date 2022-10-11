@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Coffee shop</title>
+</head>
+<style>
+    table, th, td {
+        border:1px solid black;
+    }
+    .schedule table{
+        width:60%;
+        margin:0 auto;
+        padding: 30px 20px;
+        margin-top:60px;
+        background-color: aliceblue;
+        border-radius: 10px;
+        
+    }
+    
+    .schedule-salary{
+        display:flex;
+        align-items: center;
+        position:relative;
+        left:250px;
+        top:62px;
+        border-radius: 90px;   
+    }
+    .schedule-salary{
+        padding:0 10px;
+        align-items:center;
+       
+    }
+    .schedule-options{
+        position:relative;
+        padding:10px 30px ;
+        height:30px;
+        border-top-left-radius: 10px;
+        text-align: center;
+        border-top: 2px red solid;
+        background-color: aliceblue;
+        transition: 0.3s ease-in-out
+    
+    }
+    .schedule-options:hover{
+      transform:scale(1.1)
+
+    }
+    .schedule-options:hover +.salary-options{
+        transform:scale(0.9)
+  
+      }
+    .salary-options{
+        padding:10px 30px ;
+        height:30px;
+        border-top-right-radius: 10px;
+        text-align: center;
+        border-top: 2px red solid;
+        background-color: aliceblue;
+        transition: 0.3s ease-in-out
+    }
+    .salary-options:hover{
+        transform:scale(1.1)
+    }
+    .salary-options:hover -.schedule-options{
+        transform:scale(0.9)
+  
+      }
+</style>
+
+<body >
+        <div id="header">
+            <div class="logo">  
+                <img src="images/cat-cafe-logo-vector-29511394 (1).png" width="125px">
+                <h1>CATFEE</h1>
+            </div>  
+            <div id="menu">
+                <ul id="options">
+                    <li><a class="active" href=" ">Home</a></li>
+                    <li><a class="" href="">Orders</a></li>
+                    <li><a class="" href="#footer ">Contact</a></li>
+                    <li><a class=""href=" ">Staff</a></li>
+                </ul>
+                <div class="login">
+                    <h4 class="signed">   
+                        xinchao, minhphuoc265
+                     </h4>
+                    <div id="signout">
+                        <a class="signout" href=" ">Sign Out<img class="loginimg"src="images/signout.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="schedule">
+            <div class="schedule-salary">
+                <div class="schedule-options">
+                    Schedule
+                </div>
+                <div class="salary-options">
+                    Salary
+                </div>
+            </div>
+            <table  style="width:60%" >
+                <tr>
+                  <th>Person 1</th>
+                  <th>Person 2</th>
+                  <th>Person 3</th>
+                </tr>
+                <tr>
+                  <td>Emil</td>
+                  <td>Tobias</td>
+                  <td>Linus</td>
+                </tr>
+                <tr>
+                  <td>16</td>
+                  <td>14</td>
+                  <td>10</td>
+                </tr>
+              </table>
+        </div>
+        <div id="content" style="height:1000px;"></div>
+        <div id="footer">
+            <div class="contact-link">
+                <div class="copyright">
+                    <div class="footer-text1">
+                        &copy; 2022 Catfee. All rights reserved
+                    </div>
+                    <div class="address">Address: 3, Cầu Giấy, P. Láng Thượng, Q. Đống Đa, Tp. Hà Nội</div>
+                </div>
+                
+                <div class="gmail">
+                    <div><img src="images/gmail .png" style="width:20px"></div>
+                    <div class="gmail-linear">customerservice@catfee.com.vn</div>
+                </div>
+                <div claass="footer-text">Contact with us: 
+                   <img class="contact-img" src="images/facebook.png" alt="">
+                   <img class="contact-img" src="images/insta.png" alt="">
+                   <img class="contact-img" src="images/twitter.png" alt="">
+                </div>
+            </div>
+            <div class="payment">
+                   <h4 class="payment-text">Payment</h4>
+                    <div class="payment-img1">
+                        <img src="images/visa.png" alt="" style="width:30px" >
+                    </div>
+                    <div class="payment-img2">
+                        <img src="images/paypal.png" alt=""style="width:30px">
+                    </div>
+                    <div class="payment-img3">
+                        <img src="images/momo.jfif" alt=""style="width:25px" > 
+                    </div>
+               
+            </div>
+        </div>
+</body>
+</html>
