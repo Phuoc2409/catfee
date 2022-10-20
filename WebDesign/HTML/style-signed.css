@@ -370,7 +370,7 @@ body{
     left:-60px;
 }
 .grow-number:nth-child(2)::after {
-    font-size: 24px;
+    font-size: 25px;
     position:relative;
     left:-74px;
     top:-43px;
@@ -391,7 +391,7 @@ body{
     font-weight: 600;
 }
 .grow-number:nth-child(1)::after {
-    font-size: 24px;
+    font-size: 23px;
     position:relative;
     left:-5px;
     top:-39px;
