@@ -447,7 +447,7 @@ body{
   .grow-number:nth-child(2)::after {
     position:relative;
     content: counter(count);
-    animation: counter2 40s linear forwards;
+    animation: counter2 40s linear infinite;
     counter-reset: count 0;
 }
 @keyframes counter2 {
@@ -488,7 +488,7 @@ body{
   .grow-number:nth-child(3)::after {
     position:relative;
     content: counter(count);
-    animation: counter3 35s linear forwards;
+    animation: counter3 35s linear infinite;
     counter-reset: count 0;
 }
 @keyframes counter3 {
@@ -529,7 +529,7 @@ body{
   .grow-number:nth-child(4)::after {
     position:relative;
     content: counter(count);
-    animation: counter4 35s linear forwards;
+    animation: counter4 35s linear infinite;
     counter-reset: count 0;
 }
 @keyframes counter4 {
