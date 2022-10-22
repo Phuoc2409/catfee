@@ -5,9 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
     <link rel="stylesheet" href="menu.css">
   </head>
   <body>
+    <nav>
+      <input type="checkbox" name="open" id="open">
+      <label for="open" class="open">
+          <i class="fas fa-bars"></i>
+      </label>
+      <div class="menu">
+        <ul>
+            <li>
+                <a href="#">
+                    <span><i class="fas fa-home"></i></span>
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span><i class="fas fa-comments-alt-dollar"></i></span>
+                      Order
+                </a>
+            </li>
+            <li>
+              <a href="#">
+                  <span><i class="fas fa-address-card"></i></span>
+                      Staff
+              </a>
+          </li>
+        </ul>
+      </div>
+  </nav>
     <section class="tabs">
   <input id="tab-1" type="radio" name="radio-set" class="tab-selector-1" checked="checked" />
   <label for="tab-1" class="tab-label-1">Phòng bàn</label>
