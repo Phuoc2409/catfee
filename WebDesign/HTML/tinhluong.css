@@ -1,0 +1,80 @@
+  *{
+    font-family: San;
+  }
+  @font-face {
+    font-family:'San';
+    src: url('fonts/OpenSans/OpenSans-Regular.ttf');
+  }
+  body{
+    background:linear-gradient(to right,rgb(200, 189, 173),rgb(205, 188, 166),rgb(171, 144, 110));
+  }
+  .bang{
+    text-align: center;
+  }
+  .searchTerm {
+    width: 300px;
+    border: 3px solid #00B4CC;
+    border-right: none;
+    font-size: 17px;
+    padding: 5px;
+    height: 20px;
+    border-radius: 8px 0;
+    outline: none;
+    color: #9DBFAF;
+  }
+  
+  .searchTerm:focus{
+    transition: 1s;
+    width: 500px;
+    color: #00B4CC;
+  }
+  
+  .searchButton {
+    width: 100px;
+    height: 35px;
+    border: 1px solid #00B4CC;
+    background: #00B4CC;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 8px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .tb1, .wrap{
+    margin-left: 50px;
+  }
+  .tb1 th{
+    padding:0;
+  }
+  .tb2{
+    background: #fff;
+  }
+  .tb2 tr:hover {
+    transition: 0.3s;
+    background-color: coral;}
+  th,td{
+    
+  }
+
+ .tb2{
+    margin: 20px auto;
+    width: 1000px;
+    height: 400px;
+    padding: 10px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    /* border-collapse: collapse; */
+  }
+ .tb2 .sttu{
+    background-color: #b9e6ed;
+  }
+  caption {
+    caption-side: bottom;
+    font-size: 20px;
+  }
+  .tb1{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
