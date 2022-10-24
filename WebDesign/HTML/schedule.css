@@ -10,6 +10,7 @@
   }
 body{
     overflow-x: hidden;
+    background:linear-gradient(to right,rgb(200, 189, 173),rgb(205, 188, 166),rgb(171, 144, 110));
 }
 .header{
     display:flex;
@@ -20,15 +21,38 @@ body{
     font-weight: 600;
     padding:30px;
 }
-table{
+.heading1 {
+    color:rgb(25, 0, 255);
+    text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px #fff;
+}
+.time-info h3:hover{
+    border-bottom: 3px solid blue;
+}
+.time-info{
+   display:flex ;
+   justify-content: center;
+   align-items: center;
+}
+.time-info img{
+    width:20px;
+    height:20px;
+}
+table{  
     padding: 0px 20px;
    
 }
 .time{
     display:flex;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom:10px;
 }
 .time-info{
-    padding:30px;
+    margin:0 30px;
+    margin-top:20px;
+}
+.time-info h3{
+    margin:10px;
 }
 table th{
     font-size: 30px;
@@ -49,28 +73,28 @@ th:nth-child(n+2),td:nth-child(n+2){
 .yellow{
     width:40px;
     height:40px;
-    background:yellow;
+    background:linear-gradient(to right bottom,rgb(255, 255, 0),rgb(253, 253, 96),rgb(255, 253, 253));
     border-radius: 50%;
     margin-left:39px;
 }
 .green{
     width:40px;
     height:40px;
-    background:rgb(54, 254, 4);
+    background:linear-gradient(to right bottom,rgb(9, 255, 0),rgb(77, 251, 71),rgb(255, 253, 253));
     border-radius: 50%;
     margin-left:39px;
 }
 .red{
     width:40px;
     height:40px;
-    background:rgb(230, 15, 4);
+    background:linear-gradient(to right bottom,rgb(255, 0, 0),rgb(245, 104, 104),rgb(255, 253, 253));
     border-radius: 50%;
     margin-left:39px;
 }
 .blue{
     width:40px;
     height:40px;
-    background:rgb(4, 0, 255);
+    background:linear-gradient(to right bottom,rgb(0, 38, 255),rgb(54, 83, 246),rgb(255, 253, 253));
     border-radius: 50%;
     margin-left:39px;
 }

@@ -42,6 +42,9 @@ ul li:hover{
     padding-left: 35px;
     background-color: rgb(133, 118, 97);
 }
+ul li :hover select{
+  background-color: rgb(133, 118, 97);
+}
 ul li a{
     display: block;
     color: #fff;
@@ -64,7 +67,7 @@ ul li a{
     margin-left: 25px;
     margin-top: 25px;
     padding: 15px 15px;
-    color: rgb(255, 255, 255);
+    color: rgb(253, 253, 253);
     z-index: 99;
 }
 .open img{
@@ -84,6 +87,29 @@ ul li a{
     top:-10px;
     position: absolute;
 }
+
+select {
+  width:70px;height:30px;background:rgb(99, 82, 60);
+  border:0;
+  font-size:20px;
+  font-weight: 600;
+  color:white;
+  -webkit-appearance:none;
+  appearance: none;
+}
+select:active{
+  border:0;
+}
+select{
+  outline: none;
+  width:auto
+}
+option{
+  border:0;
+  outline: none;
+}
+
+
 .img{
   
     position:relative;
