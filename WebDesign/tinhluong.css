@@ -1,0 +1,99 @@
+  *{
+    font-family: San;
+  }
+  @font-face {
+    font-family:'San';
+    src: url('fonts/OpenSans/OpenSans-Regular.ttf');
+  }
+  body{
+    background:linear-gradient(to right,rgb(107, 185, 249),rgb(68, 171, 255),rgb(4, 139, 250));
+  }
+  .bang{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: verdana;
+    font-size: 34px;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow:  1px 1px 1px #919191,
+                  1px 2px 1px #919191,
+                  1px 3px 1px #919191,
+                  1px 4px 1px #919191,
+                  1px 5px 1px #919191,
+                  1px 6px 1px #919191,
+                  1px 7px 1px #919191,
+                  1px 8px 1px #919191,
+                  1px 9px 1px #919191,
+                  1px 10px 9px #919191,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+  }
+  .searchTerm {
+    width: 300px;
+    border: 3px solid rgb(24, 148, 249);
+    border-right: none;
+    font-size: 17px;
+    padding: 5px;
+    height: 20px;
+    border-radius: 8px 0;
+    outline: none;
+    color: #9DBFAF;
+  }
+  
+  .searchTerm:focus{
+    transition: 1s;
+    width: 500px;
+    color: rgb(107, 185, 249);
+  }
+  
+  .searchButton {
+    width: 100px;
+    height: 35px;
+    border: 1px solid rgb(107, 185, 249);
+    background: rgb(107, 185, 249);
+    text-align: center;
+    color: #fff;
+    border-radius: 0 8px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .tb1, .wrap{
+    margin-left: 50px;
+  }
+  .tb1 th{
+    padding:0;
+  }
+  .tb2{
+    background: #fff;
+  }
+  .tb2 tr:hover {
+    transition: 0.3s;
+    background-color: rgb(107, 185, 249);}
+ .nv label{
+  padding-left:30px;
+ }
+
+ .tb2{
+    margin: 20px auto;
+    width: 1000px;
+    height: 400px;
+    padding: 10px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    /* border-collapse: collapse; */
+  }
+ .tb2 .sttu{
+    background-color: #0091ff;
+  }
+  caption {
+    caption-side: bottom;
+    font-size: 20px;
+  }
+  .tb1{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
