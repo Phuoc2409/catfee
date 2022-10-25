@@ -41,7 +41,9 @@
     outline: none;
     color: #9DBFAF;
   }
-  
+  table .tb2 td{
+    font-weight: 600;
+  }
   .searchTerm:focus{
     transition: 1s;
     width: 500px;

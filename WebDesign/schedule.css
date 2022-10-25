@@ -8,6 +8,10 @@
     font-family:'San';
     src: url('fonts/OpenSans/OpenSans-Regular.ttf');
   }
+  @font-face {
+    font-family:news;
+    src: url('fonts/Rukola/iCiel\ Rukola.ttf');
+  }
 body{
     overflow-x: hidden;
     background:linear-gradient(to right,rgb(130, 193, 245),rgb(51, 162, 253),rgb(0, 140, 255))
@@ -17,9 +21,10 @@ body{
     justify-content: space-between;
 }
 .heading{
-    font-size: 20px;
+    font-size: 40px;
     font-weight: 600;
-    padding:30px;
+    margin:0 50px;
+    font-family: news;
 }
 .heading1 {
     color:rgb(25, 0, 255);
@@ -111,10 +116,11 @@ th:nth-child(n+2),td:nth-child(n+2){
     border:2px yellow solid;
     margin-top:40px;
     border-radius: 10px;
-    background:rgb(255, 255, 255)
+    background:rgb(255, 255, 255) ;transition: 0.3s;
 }
 
 .yellow:hover~.no1{
+   
      opacity:1;
 
 }
