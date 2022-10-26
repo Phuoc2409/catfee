@@ -8,25 +8,31 @@
     font-family:'San';
     src: url('fonts/OpenSans/OpenSans-Regular.ttf');
   }
+  @font-face {
+    font-family:news;
+    src: url('fonts/Rukola/iCiel\ Rukola.ttf');
+  }
 body{
     overflow-x: hidden;
-    background:linear-gradient(to right,rgb(200, 189, 173),rgb(205, 188, 166),rgb(171, 144, 110));
+    background:linear-gradient(to right,rgb(130, 193, 245),rgb(51, 162, 253),rgb(0, 140, 255))
 }
 .header{
     display:flex;
     justify-content: space-between;
 }
 .heading{
-    font-size: 20px;
+    font-size: 40px;
     font-weight: 600;
-    padding:30px;
+    margin:0 50px;
+    font-family: news;
 }
 .heading1 {
     color:rgb(25, 0, 255);
-    text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px #fff;
+    text-shadow: 0 13.36px 8.896px rgb(24, 148, 249),0 -2px 1px rgb(172, 216, 252);
 }
 .time-info h3:hover{
-    border-bottom: 3px solid blue;
+    transition: 0.2s;
+    border-bottom: 3px solid rgb(0, 65, 119);
 }
 .time-info{
    display:flex ;
@@ -65,10 +71,10 @@ table tr {
    font-weight: 600;
 }
 th,td{
-    border-bottom: 2px solid rgb(159, 158, 158);
+    border-bottom: 2px solid rgb(82, 82, 82);
 }
 th:nth-child(n+2),td:nth-child(n+2){
-      border-left:2px dashed rgb(125, 125, 125);
+      border-left:2px dashed rgb(67, 67, 67);
 }
 .yellow{
     width:40px;
@@ -110,10 +116,11 @@ th:nth-child(n+2),td:nth-child(n+2){
     border:2px yellow solid;
     margin-top:40px;
     border-radius: 10px;
-    background:white
+    background:rgb(255, 255, 255) ;transition: 0.3s;
 }
 
 .yellow:hover~.no1{
+   
      opacity:1;
 
 }
