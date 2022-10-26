@@ -164,11 +164,33 @@
                 <h4 style="padding-left:3px">Bảng giá chung</h4>
               </span>
             </span>
-            <span >
+            <span style="opacity:0.5">
                 <img style="margin-top:100px"src="images/dish.png">
-              <p style="height:150px;font-weight:600">Chưa có món nào được đặt</p>
+              <p style="height:100px;font-weight:600">Chưa có món nào được đặt</p>
             </span>
-          
+            <span class="table-select">
+                <select class="table1">
+                  <option value="">Bàn 1</option>
+                  <option value="">Bàn 2</option>
+                  <option value="">Bàn 3</option>
+                  <option value="">Bàn 4</option>
+                  <option value="">Bàn 5</option>
+                  <option value="">Bàn 6</option>
+                  <option value="">Bàn 7</option>
+                  <option value="">Bàn 8</option>
+                  <option value="">Bàn 9</option>
+                </select>
+                <p style="font-size:20px;color:rgb(33, 149, 232)">/</p>
+                <select class="table1">
+                  <option value="">Tầng 1</option>
+                  <option value="">Tầng 2</option>
+                  <option value="">Tầng 3</option>
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                </select>
+                <p style="margin-left:120px;font-size:16px;font-weight:600">Tổng tiền: 0đ</p>
+            </span>
             <span class="purchase">
               <span class="pur1">
                   Thanh toán
@@ -235,25 +257,62 @@
               <img src="images/mocha.png" alt="">
                 <p>Mocha Machiato</p>
             </td>
-            
+
           </tr>
           
       </table>
       <span class="right" style="display: block;border:4px solid rgb(49, 136, 222)" >
-        <span  class="box" style="padding:5px 6px;margin-top:10px">
+        
+        <span style="display:flex;justify-content:space-around">
+          <span  class="box" style="padding:5px 6px;margin-top:10px">
           <form action="/action_page.php">
-          <input style="opacity:1;position:static;width:200px;padding:10px;border-radius:10px" type="text" placeholder="Search.." name="search">
+          <input style="opacity:1;position:static;width:150px;padding:10px;border-radius:10px" type="text" placeholder="Search.." name="search">
           <button style="padding:10px;border-radius:10px"type="submit"><i class="fa fa-search"></i></button>
           </form>
         </span>
+        <span >  
+          <input style="width:20px;left:-90px;" type="checkbox" name="add" id="add">
+          <label  style="width:20px;left:-20px;box-shadow:none;border:0"for="add" class="add">
+              <img src="images/plus.png" style="width:30px;height:30px;margin:0 ;margin-right:50px;margin-top:5px">
+          </label>
+          <span class="addmenu">
+            <table>
+              <tr>
+                  <th>Tên:</th>
+                  <th><input type="text" placeholder="Tên sản phẩm.."></th>
+              </tr>
+              <tr>
+                <th>Mã sản phẩm:</th>
+                <th><input type="text" placeholder="Mã sản phẩm.."></th>
+              </tr>
+              <tr>
+                <th>Giá Tiền:</th>
+                <th><input type="text" placeholder="Giá tiền.."></th>
+              </tr>
+              <tr>
+                <th>Size:</th>
+                <th><input type="text" placeholder="Size.."></th>
+              </tr>
+              <tr>
+                <th>Hình ảnh:</th>
+                <th class="insert-img">
+                  <img src="images/img.png" style="width:20px;height:20px;margin:0" >
+                </th>
+              </tr>
+          </table>
+         
+          </span>
+        </span>
+        </span>
           <span>
               <img style="width:80px;height:80px;margin-top:120px;opacity:0.1"src="images/plusdish.png">
-            <p style="height:155px;font-weight:600;opacity:0.6">Chưa có món nào được thêm</p>
+              <p style="height:155px;font-weight:600;opacity:0.6">Chưa có món nào được thêm</p>
           </span>
         
           <span class="purchase">
             <span class="pur1">
-                Thêm món
+                  Thêm món
+            
             </span>
             <span class="pur2">
                 Cập nhật menu
