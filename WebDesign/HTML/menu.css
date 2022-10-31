@@ -75,13 +75,15 @@ ul li a{
     font-weight: bold;
 }
 select {
-    width:70px;height:30px;background:rgb(27, 167, 237);
+    height: 90px;
+    width:70px;background:rgb(27, 167, 237);
     border:0;
     font-size:18px;
     font-weight: 600;
     color:white;
     -webkit-appearance:none;
     appearance: none;
+    outline:0;
   }
   select:active{
     border:0;
@@ -192,7 +194,7 @@ select {
 
 .tabs label:first-of-type {
     z-index: 4;
-    box-shadow: 2px 0 2px rgba(0,0,0,0.1);
+   
 }
 
 .tab-label-2 {
@@ -277,8 +279,8 @@ td, th, tr{
     border-radius: 17px;
     /* width: 15%;
     height: 25%; */
-    background-color: #F4F6F8;
     /* border-style: none; */
+    background:#ffffff;
     border: 0.5px solid rgba(0,0,0,0.05);
     font-weight: bold;
     font-size: 1.7rem;
@@ -375,6 +377,7 @@ span .purchase {
     display:flex;
     font-size: 16px;
   justify-content: center;
+  font-weight: 600;
 }
 .purchase span{
       padding:10px 20px;
@@ -437,7 +440,7 @@ p{
 }
 .addmenu{
     width:350px;
-   
+    transition:0.3s;
     position:absolute;
     background:rgb(245,245,245);
     top:70px;
@@ -477,15 +480,36 @@ p{
 }
 .table1{
     color:rgb(33, 149, 232);
-    margin:10px;
+
     font-size:14px;
     background:none;
 }
 .table1 option{
+    height: 50px;
    color:#0284CE;
    border:0;
    outline:0;
    background:rgb(144, 209, 255);
 }
-
+#add:checked~ label img{
+    transition:0.5s;
+    transform:rotate(45deg)
+}
+#add:checked{
+    transition:0.5s;
+}
+td label{
+    background:transparent;
+}
+div .ban2{ 
+    width:360px;
+    left:630px;
+    z-index: 2;
+    height:340px;
+   opacity:0;
+   padding:0;
+}
+td #ban1:checked~div{
+    opacity:1;
+}
 
