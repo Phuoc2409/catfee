@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-
+    
     <link rel="stylesheet" href="style-login.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,29 +15,58 @@
         <p >CATFEE</p>
     </div>
     <div class="login-box">
-        <div class="button-box">
-          <div id="btn"></div>
-          <button type="button" class="switch">Log In</button>
-          <button type="button" class="switch">Register</button>
+        <div  class="button-box">
+          <button style="z-index:10" type="button" class="switch">Log In</button>
+          <input style="z-index:10" type="checkbox" name="button" id="button">
+
+        
         </div>
-        <div class="social-icons">
-          <img src="images/facebook-brown.png">
-          <img src="images/insta-brown.png">
-          <img src="images/gg-logo-brown.png">
-        </div>
-        <form id="login" class="input-group" action="https://phuoc2409.github.io/catfee/WebDesign/HTML/Coffee-manager-signed.html" method="PUT">
+        
+        <form id="login" class="input-group" action="https://phuoc2409.github.io/catfee/WebDesign/HTML/Coffee-manager-home.html" method="PUT">
           <input type="text" class="input-field" placeholder="User   ID " required>
           <input type="text" class="input-field" placeholder="Enter Password" required>
           <input type="checkbox" class="check-box"><span>Remember Password</span>
           <button type="submit" class="submit-btn">Log In</button>
         </form>
+        <input style="width:100px;height:80px;z-index:10;background:red;position:relative;top:-160px;left:150px;display:none" type="checkbox" name="button1" id="button1">
+          <label style="z-index:10" for="button1" class="button1">
+            <p style="font-size:15px;position:relative;top:-69px;left:172px;z-index:10">Register</p>
+          </label>
+          <div id="btn"></div>
         <form id="register" class="input-group" >
           <input type="text" class="input-field" placeholder="User ID " required>
-          <input type="email" class="input-field" placeholder="Email ID " required>
-          <input type="text" class="input-field" placeholder="Enter Password" required>
-          <input type="checkbox" class="check-box"><span>I agree the terms & conditions</span>
+          <input style="background:white"type="email" class="input-field" placeholder="Email ID " required>
+          <input style="background:white"type="text" class="input-field" placeholder="Enter Password" required>
+          <div style="align-items:center"><input style=""type="checkbox" class="check-box"><span style="background:white">I agree the terms & conditions</span></div>
           <button type="submit" class="submit-btn">Register </button>
         </form>
+        <div class="social-icons">
+          <img src="images/facebook-brown.png">
+          <img src="images/insta-brown.png">
+          <img src="images/gg-logo-brown.png">
+        </div>
+        
+    </div>
+    <div class="support">
+      <input type="checkbox" name="sp" id="sp">
+      <label for="sp" class="sp">
+        <img class="rung"src="images/support.png">
+      </label>
+      <div class="contact">
+        <img src="images/message.png">
+        <p>Let have a chat</p>
+        <input type="text" placeholder="Start a Live Chat">
+      </div>
+      <div class="contact1">
+        <img src="images/letter.png">
+        <p>Drop us a line</p>
+        <input type="text" placeholder="Submit a Request">
+      </div>
+      <div class="contact2">
+        <img src="images/phone.png">
+        <p>Text us</p>
+        <input type="text" placeholder="Text">
+      </div>
     </div>
 </body>
 </html>
