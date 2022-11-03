@@ -46,7 +46,7 @@ body{
   position:relative;
   margin :6% auto;
   background:white;
-  padding:15px 15px 30px 15px;
+  padding:15px 15px 50px 15px;
   top:-150px;
   border-radius:20px;
   overflow: hidden;
@@ -115,6 +115,8 @@ body{
 }
 
 .submit-btn{
+  position:relative;
+  top:-10px;
   width:85%;
   padding: 10px 30px;
   cursor:pointer;
