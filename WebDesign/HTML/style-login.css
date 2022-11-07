@@ -60,7 +60,7 @@ body{
   position:relative;
   box-shadow: 0 0 20px 9px rgb(222, 209, 192);
   border-radius: 30px;
-  padding:5px
+  padding:6px
 }
 .switch{
   padding:10px 30px;
@@ -76,7 +76,7 @@ body{
   left:44px;
   position:absolute;
   width:120px;
-  height:48px;
+  height:51px;
   background:linear-gradient(to right,rgb(243, 229, 210),rgb(212, 191, 163),rgb(219, 189, 149),rgb(197, 158, 107));
   border-radius:30px;
   transition:0.5s;
@@ -161,7 +161,7 @@ span{
   position:relative;
 }
 #button1:checked~#btn{
-  left:155px;
+  left:156px;
 }
 #button1:checked~#register{
   transition: 0.3s;
