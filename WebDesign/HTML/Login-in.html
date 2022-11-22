@@ -22,9 +22,9 @@
         
         </div>
         
-        <form id="login" class="input-group" action="https://phuoc2409.github.io/catfee/WebDesign/HTML/Coffee-manager-signed.html" method="PUT">
-          <input type="text" class="input-field" placeholder="User   ID " required>
-          <input type="text" class="input-field" placeholder="Enter Password" required>
+        <form id="login" class="input-group" onsubmit="submitForm(event)" method="PUT">
+          <input id="user"type="text" class="input-field" placeholder="User ID " required>
+          <input id="password"type="text" class="input-field" placeholder="Enter Password" required>
           <input type="checkbox" class="check-box"><span>Remember Password</span>
           <button type="submit" class="submit-btn">Log In</button>
         </form>
@@ -68,5 +68,18 @@
         <input type="text" placeholder="Text">
       </div>
     </div>
+    <script>
+          function submitForm(event){
+            event.preventDefault();
+            var usename= document.getElementById("user").value;
+            var password=document.getElementById("password").value;
+            if(usename=="minhphuoc2409" && password == "12345678"){
+              window.location=" https://phuoc2409.github.io/catfee/WebDesign/HTML/Coffee-manager-signed.html";
+            }
+            else{
+              alert("Tai khoan hoac mat khau khong chinh xac");
+            }
+          }
+    </script>
 </body>
 </html>
