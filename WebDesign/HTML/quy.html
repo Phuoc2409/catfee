@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="quy.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang dành cho quản lý</title>
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" name="open" id="open">
+        <label for="open" class="open">
+            <i class="fas fa-bars"></i>
+            <!-- <img src='images/hamburger.png'> -->
+        </label>
+        <div class="nav-bar">
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="https://phuoc2409.github.io/catfee/WebDesign/HTML/home-remake.html">
+                            <span><i class="fas fa-home"></i></span>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://phuoc2409.github.io/catfee/WebDesign/HTML/menu.html">
+                            <span><i class="fas fa-comments-alt-dollar"></i></span>
+                            Order
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span><i class="fas fa-address-card"></i></span>
+                            <select name="links" id="" size="1" onchange="window.location.href=this.value;">
+                                <option selected disabled style="display:none">Staff</option>
+                                <option value="https://phuoc2409.github.io/catfee/WebDesign/HTML/tinhluong.html">Salary
+                                </option>
+                                <option value="https://phuoc2409.github.io/catfee/WebDesign/HTML/schedule.html">Schedule
+                                </option>
+    
+                            </select>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="logo">
+                <img src="images/cat-logo.png">
+                <p>CATFEE</p>
+            </div>
+        </div>
+        
+    </nav>
+    <!-- <div class="logo">
+        <img src="images/cat-logo.png">
+        <p>CATFEE</p>
+    </div> -->
+    <!-- <div id="chart">
+
+    </div> -->
+    <div id="admin-content">
+        <div id="admin-chart">
+            <div class="chart-box">
+                <p class="word"> Thống Kê Doanh Thu </p>
+                <div class="chart">
+                    <input type="checkbox" name="arrow" id="arrow">
+                    <label for="arrow" class="arrow">
+                        <img class="arrow-btn" src="images/right-arrow.png">
+                    </label>
+                    <div class="chart-img">
+                        <div class="box">
+                        <!-- Bang thu 1 -->
+                            <div class="column-chart">
+                                <!-- <p>Các Tháng Qua</p> -->
+                                <h3>Thu nhập tháng 10</h3>
+                                <div class="chart-item" style="--percent: 35%"></div>
+                                <div class="chart-item" style="--percent: 40%"></div>
+                                <div class="chart-item" style="--percent: 56%"></div>
+                                <div class="chart-item" style="--percent: 75%"></div>
+                                <div class="chart-item" style="--percent: 90%"></div>
+                                <div class="chart-item" style="--percent: 85%"></div>
+                                <div class="chart-item" style="--percent: 60%"></div>
+                                <div class="chart-item" style="--percent: 50%"></div>
+                                <div class="chart-item" style="--percent: 96%"></div>
+                                <div class="chart-item" style="--percent: 89%"></div>
+                            </div>
+                        <!-- Bang thu 2 -->
+                            <div class="four-box">
+                                <div id="monthly-income">
+                                    <p id="monthly-count">250.</p>
+                                    <p>Thu nhập tháng</p>
+                                </div>
+                                <div id="convert-propo">
+                                    <p id="convert-count">90.</p>
+                                    <p>Tỷ lệ chuyển đổi</p>
+                                </div>
+                                <div id="daily-income">
+                                    <p id="daily-count">5.</p>
+                                    <p>Thu nhập ngày</p>
+                                </div>
+                                <div id="access-nums">
+                                    <p id="access-count">4</p>
+                                    <p>Lượt truy cập</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider">
+
+            </div>
+        </div>
+        <div class="summary">
+            <h1>Tóm tắt</h1><br>
+            <h3>Theo thống kê thì doanh thu tháng này ở mức khá so với các tháng trước.</h3>
+            <h3>Nếu không có thay đổi thì doanh thu sẽ là cao nhất trong tất cả các tháng.</h3>
+            <div class="social-icons">
+                <img src="images/facebook-gray.png">
+                <img src="images/insta-gray.png">
+                <img src="images/twitter-gray.png">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
