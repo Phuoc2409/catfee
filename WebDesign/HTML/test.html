@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container">
+        <div class="content-box">
+            <div class="image">
+                <img src="images/hotnews.jpg">
+            </div>
+        </div>
+        <div class="content-box">
+            <div class="right">
+                <div class="about">
+                <h2>About PPC Lubricans</h3>
+                <h3>It is a common to do entire web layouts using CSS float property. Float is asy to learn - you just need to remember how the float and clear properties work, Disadvantages:</h3>
+            </div>
+            <div class="input">
+                <form onsubmit="submitForm(event)">
+                    <h3>Email</h3>
+                    <input type="text" id="email">
+                    <h3>Comment</h3>
+                    <input type="text" id="comment">
+                    <div class="rate">
+                        <h3>Rating</h3>
+                        <input type="text" id="rate">
+                    </div>
+                    <input type="submit" value="send">
+                </form>
+            </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+<script>
+    function submitForm(event){
+        event.preventDefault();
+        var email=document.getElementById("email").value;
+        var comment=document.getElementById("comment").value;
+        var rate=document.getElementById("rate").value;
+        if(email==""&&comment==""&&rate==""){
+            alert("You haven't fill any contact box!")
+        }
+        else if(email.search("@gmail.com")!="-1"&&comment!=0&&rate!=""&&rate>=0&&rate<=10){
+            alert("Thanks for your replication")
+        }
+        else if(email.search("@gmail.com")=="-1"){
+            alert("Please check your email!")
+        }
+        else if(comment==0){
+            alert("Please write some comment!")
+        }
+        else if(Number.isInteger(rate)==false){
+            alert("Our rating is about 1 to 10! \nPlease fill the number in the rate box!")
+        }
+    }
+</script>
+</html>
