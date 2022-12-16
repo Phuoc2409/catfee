@@ -48,6 +48,9 @@
         if(email==""&&comment==""&&rate==""){
             alert("You haven't fill any contact box!")
         }
+        else if(email.search("@gmail.com")!="-1"&&comment!=0&&rate>=0&&rate<=10){
+            alert("Thanks for your replication")
+        }
         else if(email.search("@gmail.com")=="-1"){
             alert("Please check your email!")
         }
@@ -57,9 +60,7 @@
         else if(Number.isInteger(rate)==false||rate==""){
             alert("Our rating is about 1 to 10! \nPlease fill the number in the rate box!")
         } 
-        else if(email.search("@gmail.com")!="-1"&&comment!=0&&rate>=0&&rate<=10){
-            alert("Thanks for your replication")
-        }
+        
     }
 </script>
 </html>
